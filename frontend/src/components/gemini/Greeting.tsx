@@ -12,7 +12,7 @@ export default function Greeting({ onSelectPrompt }: GreetingProps) {
     <div className="mx-auto w-full max-w-3xl px-4">
       <div className="mb-10">
         <h1 className="text-4xl font-semibold sm:text-5xl">
-          <span className="gemini-gradient-text">Hello, {firstName}</span>
+          <span className="gemini-gradient-text">Hello there, I am {firstName}</span>
         </h1>
         <p className="mt-2 text-3xl font-medium text-slate-400 sm:text-4xl">
           How can I help you explore my work?
