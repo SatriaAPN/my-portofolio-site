@@ -8,5 +8,8 @@
 /bin/
 *.out
 
+# Editor / tooling
+.claude/
+
 # OS
 .DS_Store

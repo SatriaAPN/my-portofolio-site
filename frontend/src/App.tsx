@@ -4,6 +4,7 @@ import TopBar from './components/gemini/TopBar'
 import Greeting from './components/gemini/Greeting'
 import PromptInput from './components/gemini/PromptInput'
 import { MessageRow, TypingRow, type ChatMessage } from './components/gemini/Message'
+import Markdown from './components/gemini/Markdown'
 import { getResponse } from './lib/responses'
 import { fetchChatReply, type ApiMessage } from './lib/chatApi'
 
@@ -42,7 +43,7 @@ export default function App() {
         {
           id: nextId(),
           role: 'model',
-          content: <p className="whitespace-pre-wrap leading-relaxed">{reply}</p>,
+          content: <Markdown>{reply}</Markdown>,
         },
       ])
     } catch {
